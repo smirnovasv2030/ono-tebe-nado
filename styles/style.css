@@ -299,7 +299,7 @@ margin-bottom: 23px;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 align-items: center;
-padding: 147px 50px;
+padding: 147px 50px 0;
 }
 
 .address_footer {
@@ -314,6 +314,7 @@ padding: 147px 50px;
 .footer_menu {
   align-self: start;
   justify-self: center;
+  padding-bottom: 20px;
 }
 
 .footer_menu-list-item {
