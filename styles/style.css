@@ -1,14 +1,11 @@
 .header {
-  width: 1052px;
-  height: 105px;
-  border: 1px solid #000;
-  margin: 92px 24px 96px;
+  width: 100%;
+  padding: 92px 24px 92px;
   display: flex;
 }
 
 .header_menu {
   width: 391.48px;
-  height: 22px;
   margin-left: 26.52px;
   font-size: 18px;
   color: #000;
@@ -48,19 +45,13 @@
   font-style: normal;
   font-size: 19px;
   width: 240.52px;
-  height: 98px;
   margin-left: 184.86px;
   margin-top: 5px;
   line-height: 1.29;
   letter-spacing: -0.01em;
 }
 
-.address-tel {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.address-email {
+.address-address {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -71,75 +62,69 @@
 
  .cover {
   max-width: 100%;
-  height: 757px;
-  margin-bottom: 0px;
   background-image: url(../images/cover.jpg);
- }
+  object-fit: cover;
+  padding-bottom: 50px;
+  position: relative;
+}
 
  .overlay {
-  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  background-color: rgba(0, 0, 0, .6);
   height: 100%;
   width: 100%;
   z-index: 0;
+
  }
 
- .title {
-  z-index: 1;
- }
-
-.first-title {
-  padding-top: 165px;
-  padding-left: 50px;
+ .title-cover-text {
   font-weight: 700;
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #fff;
-}
+  padding: 165px 50px 0;
+ }
 
-.first-title-part {
+.title-cover-text-left {
   letter-spacing: 0.6em;
 }
 
-.second-title {
+.title-cover-text-center {
   padding-top: 12px;
-  font-weight: 700;
-  font-size: 100px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
+  display: block;
   text-align: center;
-  color: #fff;
 }
 
-.second-title-part {
+.title-cover-text-center-letter-spasing {
   letter-spacing: 0.6em;
 }
 
-.third-title {
-  padding-top: 12px;
-  padding-left: 633px;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 100%;
-  letter-spacing: 0.6em;
-  text-transform: uppercase;
+.title-cover-text-right {
+  display: block;
   text-align: right;
-  color: #fff;
+  letter-spacing: 0;
+  padding-top: 5px;
 }
 
-.third-title-part {
+
+.title-cover-text-right-letter-spasing {
   letter-spacing: 0.3em;
+}
+
+.title-cover-text-right-letter-spasing-max{
+  letter-spacing: 0.35em;
 }
 
 .title-text-button {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .title-text {
-  margin-top: 146px;
+  margin-top: 141px;
   margin-left: 78px;
   font-weight: 400;
   font-size: 22px;
@@ -147,17 +132,14 @@ justify-content: space-between;
   text-transform: uppercase;
   color: #fff;
   word-spacing: 0.88em;
-}
-
-.title-text-part {
-  word-spacing: 0.78em;
+  letter-spacing: -0.01em;
 }
 
 .title-button {
   border: 1px solid #fff;
   width: 256px;
   height: 51px;
-  margin-top: 133px;
+  margin-top: 128px;
   margin-right: 50px;
   font-weight: 500;
   font-size: 22px;
@@ -170,9 +152,7 @@ justify-content: space-between;
 }
 
 .lots {
-  width: 1052px;
-  height: 692px;
-  margin: 179px 24px;
+padding: 181px 24px;
 }
 
 .lots_heading {
@@ -185,13 +165,20 @@ justify-content: space-between;
 }
 
 .lots_card-list {
-  width: 334px;
-  min-height: 563px;
   margin-top: 27px;
+  margin-bottom: 30px;
   list-style: none;
   display: flex;
-  flex-grow: 1;
-  column-gap: 25px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+
+.lots__card-list-item{
+  position: relative;
+  width: 334px;
+  min-height: 563px;
+
 }
 
 .card_type_film {
@@ -202,7 +189,7 @@ justify-content: space-between;
 
 .card-link {
   display: block;
-  height: 100%;
+  position: relative;
 }
 
 .card {
@@ -212,6 +199,8 @@ justify-content: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  z-index: -1;
 }
 
 .card__title {
@@ -233,18 +222,14 @@ justify-content: space-between;
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  height: 100%;
-  z-index: -1;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  height: 100%;
-  z-index: -1;
 }
 
 .lots__look-more-link {
-  margin: 30px 40px;
+  margin: 45px 40px;
   font-size: 18px;
   letter-spacing: 1.25px;
   text-decoration: underline;
@@ -252,13 +237,10 @@ justify-content: space-between;
 }
 
 .about {
-  height: 595px;
-}
-
-.about__column {
+  padding-bottom: 37px;
   display: grid;
   grid-template-columns: 383px 693px;
-  grid-template-rows: 248px 312px;
+  grid-template-rows: 250px 312px;
 }
 
 .about__logo {
@@ -280,38 +262,31 @@ justify-content: space-between;
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
-  margin: 103px 0;
+  margin: 105px 0;
 }
 
 .about_text {
-grid-column-start: 2;
-grid-column-end: 3;
-font-size: 18px;
-line-height: 1.35;
-letter-spacing: 0.07em;
-}
-
-.about_text-part {
-margin-bottom: 23px;
-}
-
-.about_text-second-part {
-  letter-spacing: 0.035em;
-  word-spacing: 0.2em;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: 0.07em;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
 }
 
 .footer {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-align-items: center;
-padding: 147px 50px 86px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 147px 50px 86px;
 }
 
 .address_footer {
   font-style: normal;
   font-size: 19px;
   width: 240.52px;
-  height: 98px;
   line-height: 1.29;
   letter-spacing: -0.01em;
 }
