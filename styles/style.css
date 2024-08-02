@@ -113,7 +113,7 @@
   letter-spacing: 0.3em;
 }
 
-.title-cover-text-right-letter-spasing-max{
+.title-cover-text-right-letter-spasing-max {
   letter-spacing: 0.35em;
 }
 
@@ -174,11 +174,10 @@ padding: 181px 24px;
 }
 
 
-.lots__card-list-item{
+.lots__card-list-item {
   position: relative;
   width: 334px;
   min-height: 563px;
-
 }
 
 .card_type_film {
