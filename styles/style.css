@@ -58,7 +58,6 @@
 
 .header_address {
   text-decoration: none;
-
 }
 
  .cover {
@@ -220,6 +219,8 @@
   font-size: 20px;
   line-height: 120%;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .card_type_film {
@@ -292,6 +293,10 @@
 .address_footer {
   display: flex;
   flex-direction: column;
+}
+
+.footer_address {
+  text-decoration: none;
 }
 
 .footer_menu {
