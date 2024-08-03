@@ -42,7 +42,9 @@
 }
 
 .address_header{
-  padding: 5px 0 0 178px;
+  padding: 5px 0 0 183px;
+  display: flex;
+  flex-direction: column;
 }
 
 .address {
